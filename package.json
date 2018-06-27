@@ -1,0 +1,37 @@
+{
+  "name": "bbandida",
+  "version": "1.0.0",
+  "description": "Webiste for BBandIda",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "debug": "nodemon --inspect",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CRHarding/bbandida.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CRHarding/bbandida/issues"
+  },
+  "dependencies": {
+    "bcrypt": "^2.0.1",
+    "cloudinary": "^1.11.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "dotenv": "^5.0.1",
+    "express": "~4.16.0",
+    "gh-pages": "^1.2.0",
+    "morgan": "~1.9.0",
+    "nodemailer": "^4.6.4",
+    "nodemon": "^1.17.3",
+    "npm": "^6.0.0",
+    "pg-promise": "^8.4.0",
+    "react-image-resizer": "^1.3.0"
+  }
+}
