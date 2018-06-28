@@ -4,11 +4,11 @@
   "description": "Webiste for BBandIda",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js",
     "debug": "nodemon --inspect",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "start": "node app.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"  
   },
   "repository": {
     "type": "git",

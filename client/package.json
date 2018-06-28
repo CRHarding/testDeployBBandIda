@@ -2,7 +2,6 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://CRHarding.github.io/bbandida",
   "dependencies": {
     "axios": "^0.18.0",
     "bootstrap": "^4.1.1",
@@ -24,8 +23,6 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "predeploy": "npm run build && mv build/index.html build/200.html && surge build bbandida.surge.sh",
-    "deploy": "gh-pages -d build"
   },
-  "proxy": "https://bbandida.surge.sh"
+  "proxy": "http://localhost:3001"
 }
