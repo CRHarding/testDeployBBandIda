@@ -3,6 +3,7 @@ const path = require('path');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
 const methodOverride = require('method-override');
+const cors = require('cors');
 
 require('dotenv').config();
 
@@ -16,6 +17,7 @@ const contactRouter = require('./routes/contact');
 const app = express();
 
 app.use(logger('dev'));
+app.use(cors());
 app.use(methodOverride('_method'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));

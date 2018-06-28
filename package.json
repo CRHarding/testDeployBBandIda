@@ -2,7 +2,7 @@
   "name": "bbandida",
   "version": "1.0.0",
   "description": "Webiste for BBandIda",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js",
@@ -19,10 +19,12 @@
   "bugs": {
     "url": "https://github.com/CRHarding/bbandida/issues"
   },
+  "homepage": "https://github.com/CRHarding/bbandida#readme",
   "dependencies": {
     "bcrypt": "^2.0.1",
     "cloudinary": "^1.11.0",
     "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
     "debug": "~2.6.9",
     "dotenv": "^5.0.1",
     "express": "~4.16.0",
