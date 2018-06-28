@@ -1,4 +1,3 @@
-\c bbandida;
 
 INSERT INTO users (email, password) VALUES
   (
